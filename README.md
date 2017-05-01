@@ -1,4 +1,6 @@
 # seancmont.github.io
+theme: jekyll-theme-architect
+
 <a href="https://github.com/seancmont">Github profile</a>
 
 <a href="https://stackoverflow.com/users/7921714/sean-montgomery">Stackoverflow profile</a>

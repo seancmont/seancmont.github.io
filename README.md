@@ -1,10 +1,11 @@
 # seancmont.github.io
-<a href="https://github.com/seancmont">Github profile</a>
 
-<a href="https://stackoverflow.com/users/7921714/sean-montgomery">Stackoverflow profile</a>
+[Github](https://github.com/seancmont)
 
-<a href="https://www.linkedin.com/in/sean-montgomery-aa600a88/">LinkedIn profile</a>
+[Stackoverflow](https://stackoverflow.com/users/7921714/sean-montgomery)
 
-<a href="https://www.instagram.com/montymonty41/?hl=en">Instagram profile</a>
+[LinkedIn](https://www.linkedin.com/in/sean-montgomery-aa600a88)
 
-<a href="https://twitter.com/montymonty41">Twitter profile</a>
+[Instagram](https://www.instagram.com/montymonty41/?hl=en)
+
+[Twitter](https://twitter.com/montymonty41)

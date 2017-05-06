@@ -1,5 +1,9 @@
 # seancmont.github.io
 
+theme: jekyll-theme-architect
+
+
+
 [Github](https://github.com/seancmont)
 
 [Stackoverflow](https://stackoverflow.com/users/7921714/sean-montgomery)

@@ -1,0 +1,17 @@
+body {
+	font-family: 'Inknut Antiqua', serif;
+	background color: #888;
+	color: white;
+}
+
+h1 {
+	font-family: 'Inknut Antiqua', serif;
+	margin: 10px 0 0;
+	font-size: 1.75em;
+}
+
+img {
+	margin: auto;
+	border-radius:50%;
+	max-height: 100%;
+}

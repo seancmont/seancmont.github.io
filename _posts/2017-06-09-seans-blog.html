@@ -1,0 +1,33 @@
+---
+layout: post
+---
+
+<h1 id="Week 3">Making a decent blog</h1>
+
+<p>Last week we began working with Javascript, this week we moved to AngularJS. It's purpose is to facilitate the Javascript, but I don't know enough about either yet to make and educated post about them. However, I did learn how to add a <a href="https://en.wikipedia.org/wiki/Favicon">Favicon </a>to my blog. It is the tiny little image that shows next to the title of your page on the browser tab. As you can tell, it looks pretty badass which is fitting for such a blog. Let's go thru the steps:</p>
+
+<p><br /></p>
+
+<p>First, pick an image you want to turn into the favicon. I picked an image of a diamond. Just by googling 'favicon', you get a bunch of results for favicon generators. Here is the <a href="http://www.favicon-generator.org/">generator </a>I used. On the choose file button, upload your image and hit the 'Create Favicon' button. Boom. As a side note, I had all the 'Maintain Image Dimensions' option selected the first time I tried and it had a big white space underneath the image. I tried again with that option unchecked and it came out how I intended.(</p>
+
+<p><br /></p>
+
+<p>Next, click the link to 'download generated favicon'. Save the image to the file you want and open your text editor. The download opens up a list of options for the format of your favicon. However, your favicon must match the dimensions of 32x32 or 16x16 to work. I found the image labeled favicon-32x32.png and renamed it for easy reference. I created folder specifically for images on my blog, which makes them easy to find. Drag and drop your renamed favicon into that image folder.</p>
+
+<p><br /></p>
+
+<p>In the head section of your html document, paste the following code:</p>
+
+<p><br /></p>
+
+<mark><code>&lt;link rel="shortcut icon" href="/images/diamond/diamond.png" type="image/x-icon"&gt;</code></mark>
+
+<p><br /></p>
+
+<p>'/images/diamond' refers to where I have the image stored. I saved all the generated images into a 'diamond' folder. 'diamond.png' is what I named the specific 32x32 favicon.</p>
+
+<p><br /></p>
+
+<p>Open in your browser, or refresh your page. Kaboom. Boomshakalaka. There it is.</p>
+
+<p><br /></p>

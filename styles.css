@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+.parallax-bg {
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.btn {
+  border-radius: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 11px;
+  padding: 8px 37px;
+}
+
+.container {
+	font-family: "Roboto Condensed", sans-serif;
+}
+
+body {
+	font-family: "Roboto Condensed", sans-serif;
+}

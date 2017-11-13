@@ -6,6 +6,7 @@ body {
   width: 100%;
   height: 100%;
   font-family: 'Armata', sans-serif;
+  color: #181842;
 }
 
 .container {
@@ -38,36 +39,51 @@ header {
     padding-left: 10px;
   }
 
-.navbar { 
+/*.nav { 
   height:40px; 
   padding-left:100px;
+  padding-right: 100px;
+  display: inline;
+}*/
+
+.nav a {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 100px;
+  text-align: center;
+  color: #005f6b;
+  font-size: 20px;
 }
 
-.navbar ul.nav {
+.nav a:hover{
+  color: #A593E0;
+}
+
+/*.nav ul.nav {
   list-style:none;
   margin:0;
   padding:0;
-}
+}*/
 
-.navbar ul.nav li {
+/*.nav ul.nav li {
   float:left;
-}
+}*/
 
-.navbar ul.nav li a {
+/*.nav ul.nav li a {
  display:block;
  padding:10px; 
  text-decoration:none; 
  color:#fff;
 }
-.navbar ul.nav li a:hover { 
+.nav ul.nav li a:hover { 
   background:#e67e22;
-}
+}*/
   
-  .container {
+/*  .container {
     width: 90%;
     margin: 0 auto;
   }
-  
+  */
   h1 {
     margin-top: 0;
   }
@@ -79,12 +95,15 @@ header {
     -webkit-transition: all 0.3s;
   }
   
-  a {       
+  /*a {       
     text-decoration: none;
+    padding-right: 30px;
+    padding-left: 30px;
+    text-align: center;
     color: #ccc;
-  }
+  }*/
   
-  nav {
+  /*nav {
     line-height: 150px;
     font-size: 1.4em;
     a {
@@ -95,7 +114,7 @@ header {
       border-top: 2px dotted white;
       border-bottom: 2px dotted white;
     }
-  }
+  }*/
   
 }
 
@@ -127,6 +146,17 @@ header.minimized {
 #footer_info {
   padding-top: 12px;
   padding-left: 5px;
+}
+
+i.fa.fa-github {
+  height: 10px;
+  width: 10px;
+}
+
+i.fa.fa-twitter-square {
+  height: 10px;
+  width: 10px;
+  padding-left: 10px;
 }
 
 /*ABOUT PAGE*/

@@ -1,0 +1,286 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sean C Montgomery</title>
+<meta charset="utf-8"> -->
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> -->
+<!-- <script src="main.js"></script> -->
+<!-- Bootstrap cdn -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css?family=Armata|Righteous|Saira+Semi+Condensed" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<header>                
+      <div id="title1">Sean C Montgomery</div>
+    </br>
+      <div id="title2">Web Developer &amp; Designer</div>
+</header>
+</head>
+<body> -->
+
+	
+
+	
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css?family=Armata|Righteous|Saira+Semi+Condensed" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>  
+* {box-sizing:border-box}
+body {font-family: 'Armata', sans-serif;}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 700px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<div class="nav">
+	<nav class="navbar" role="navigation">
+	    <a href="about.html">About</a>
+	    <a href="portfolio.html">Portfolio</a>
+	    <a href="blog.html">Blog</a>
+	    <a href="interests.html">Interests</a>
+	    <button class="btn" id="toHome"><a href="index.html">Home</a></button>
+	</nav>
+</div> 
+
+<div class="interests_bio">
+
+	<p>When not working or studying, I try to be active. My favorite sports are soccer and basketball, though my NBA aspirations fell short and Barcelona never responded to my KY Indoor highlights video. If you care, my teams are the University of Kentucky Wildcats, Green Bay Packers and unfortunately, the Cincinnati Reds.
+
+		<br />
+		<br />
+
+	I love to travel and visit my friends all around the world. My Duolingo app says I'm 70% fluent in Spanish. Here are some of my favorite pics:
+
+<div class="slideshow-container">
+<br />
+<!-- <marquee><b><i>Welcome To CodeFluent</i></b></marquee>  -->
+<!-- <br /><br /><br /><br /> -->
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="images/seven-sacred-pools.jpg" style="width:100%">
+  <div class="text">Looking swoll at the Seven Sacred Pools in Maui</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="images/britishOpen15.jpg" style="width:100%">
+  <div class="text">Keeping it classy at the 18th hole at St. Andrews</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="images/scotlandRooftop.jpg" style="width:100%">
+  <div class="text">Scoping Edinburgh from the Rooftops</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="images/Hawaii-Zipline.jpg" style="width:100%">
+  <div class="text">Post-ziplining over the jungle in Kona</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="images/spainPaella.jpg" style="width:100%">
+  <div class="text">Having some of my favorite food, paella with my boys in Spain</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="images/veniceGrandCanal.jpg" style="width:100%">
+  <div class="text">Checking out the Grand Canal in Venice</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="images/gorgeConcert.jpg" style="width:100%">
+  <div class="text">Taking in the scenery of a concert in Gorge, WA</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="images/barcelonaLion.jpg" style="width:100%">
+  <div class="text">Can't help it, I just love lions. They've got some big ones in Barcelona</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="images/brooklynBridge.jpg" style="width:100%">
+  <div class="text">Hanging with my cousin Cristina and my guy Matt in NYC</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="images/dallasFinalFour.jpg" style="width:100%">
+  <div class="text">Watching the Cats in the Final Four in JerryWorld</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="images/laObservatory.jpg" style="width:100%">
+  <div class="text">Smoggy but sweet LA views from the Griffith Observatory</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="images/florenceDuomo.jpg" style="width:100%">
+  <div class="text">Kicking it on top of the Duomo in Florence</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>				
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+	<div>
+	<p>I probably spend too much time keeping updated on pro sports in order to get an edge in my fantasy leagues so I can beat my friends. But if you're into that kinda stuff I do a pretty good job with it, so check out some of my blog posts for some killer advice.</p>
+	<br />
+	<br />	
+
+  	</div>
+
+	
+	<footer class="footer">
+    <div id="footer_info">
+        <p>&copy; 2017 All Rights Reserved | MTY41 <a href="https://github.com/seancmont"><i class="fa fa-github" aria-hidden="true"></i></a><a href="https://twitter.com/montymonty41"><i class="fa fa-twitter-square" aria-hidden="true"></i></p> 
+    </div>  
+  </footer>
+</body>
+</html>

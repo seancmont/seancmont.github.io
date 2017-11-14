@@ -1,5 +1,3 @@
-@import "compass/css3";
-
 body {
   background-image: url("images/clouds.jpg");
   background-size: cover;
@@ -27,16 +25,18 @@ header {
 }
 
 #title1 {
-    letter-spacing: 6px;
+    letter-spacing: 4px;
     font-size: 35px;
     padding-top: 40px;
     padding-left: 10px;
+    color: #181842;
   }
 
 #title2 {
     letter-spacing: 2px;
     font-size: 20px;
     padding-left: 10px;
+    color: #181842;
   }
 
 /*.nav { 
@@ -50,14 +50,16 @@ header {
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 100px;
-  text-align: center;
-  color: #005f6b;
+  color: #181842;
   font-size: 20px;
+  letter-spacing: 2px;
 }
 
 .nav a:hover{
   color: #A593E0;
 }
+
+
 
 /*.nav ul.nav {
   list-style:none;
@@ -84,9 +86,9 @@ header {
     margin: 0 auto;
   }
   */
-  h1 {
+  /*h1 {
     margin-top: 0;
-  }
+  }*/
   
   h1, nav {
     display: inline-block;
@@ -146,6 +148,7 @@ header.minimized {
 #footer_info {
   padding-top: 12px;
   padding-left: 5px;
+  font-size: 15px;
 }
 
 i.fa.fa-github {
@@ -162,18 +165,44 @@ i.fa.fa-twitter-square {
 /*ABOUT PAGE*/
 
 .about_bio {
-  padding-top: 200px;
+  padding-top: 20px;
   padding-left: 20px;
   color: #181842;
+  width: 100%;
+  margin: auto;
 }
 
 #about_pic {
   height: 250px;
   width: 215px;
-  vertical-align: middle;
-  border-radius: 30%;
-
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -100px;
+  border-radius: 20px;
+  z-index: -1;
+  
 }
 
+.btn {
+  border-radius: 10px;
+}
 
+/*BLOG PAGE*/
 
+.blogposts a {
+  color: #181842;
+  margin-left: 10px;
+}
+
+.blogposts a:hover {
+  color: #A593E0;
+}
+
+/*INTERESTS PAGE*/
+
+.carousel-inner {
+  height: 500px;
+  width: 500px;
+}

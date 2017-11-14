@@ -29,96 +29,84 @@ header {
     font-size: 35px;
     padding-top: 40px;
     padding-left: 10px;
-    color: #181842;
+    color: #ffc125;
+    text-shadow: -1px 0 #181842, 0 1px #181842, 1px 0 #181842, 0 -1px #181842;
   }
 
 #title2 {
     letter-spacing: 2px;
     font-size: 20px;
     padding-left: 10px;
-    color: #181842;
+    color: #ffc125;
+    text-shadow: -1px 0 #181842, 0 1px #181842, 1px 0 #181842, 0 -1px #181842;
   }
 
-/*.nav { 
-  height:40px; 
-  padding-left:100px;
-  padding-right: 100px;
-  display: inline;
+/*.topNav {
+    background-color: #333;
+    overflow: hidden;
 }*/
 
 .nav a {
-  padding-left: 30px;
+  padding-left: 10px;
   padding-right: 30px;
   padding-top: 100px;
-  color: #181842;
+  color: #ffc125;
+  text-shadow: -1px 0 #181842, 0 1px #181842, 1px 0 #181842, 0 -1px #181842;
   font-size: 20px;
   letter-spacing: 2px;
 }
+/*
+topNav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}*/
 
 .nav a:hover{
-  color: #A593E0;
+  color: #181842;
+  text-shadow: -1px 0 #ffc125, 0 1px #ffc125, 1px 0 #ffc125, 0 -1px #ffc125;
 }
 
-
-
-/*.nav ul.nav {
-  list-style:none;
-  margin:0;
-  padding:0;
+/*.active {
+    background-color: #4CAF50;
+    color: white;
 }*/
 
-/*.nav ul.nav li {
-  float:left;
-}*/
-
-/*.nav ul.nav li a {
- display:block;
- padding:10px; 
- text-decoration:none; 
- color:#fff;
-}
-.nav ul.nav li a:hover { 
-  background:#e67e22;
-}*/
-  
-/*  .container {
-    width: 90%;
-    margin: 0 auto;
+/*media queries*/
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+/*@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
   }
-  */
-  /*h1 {
-    margin-top: 0;
-  }*/
-  
+}*/
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+/*@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topNav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}*/
+
   h1, nav {
     display: inline-block;
     position: relative;
     line-height: 150px;
     -webkit-transition: all 0.3s;
   }
-  
-  /*a {       
-    text-decoration: none;
-    padding-right: 30px;
-    padding-left: 30px;
-    text-align: center;
-    color: #ccc;
-  }*/
-  
-  /*nav {
-    line-height: 150px;
-    font-size: 1.4em;
-    a {
-      margin-left: 10px;
-    }
-    
-    a:hover{
-      border-top: 2px dotted white;
-      border-bottom: 2px dotted white;
-    }
-  }*/
-  
-}
 
 header.minimized {
   height: 60px;
@@ -166,7 +154,7 @@ i.fa.fa-twitter-square {
 
 .about_bio {
   padding-top: 20px;
-  padding-left: 20px;
+  padding-left: 10px;
   color: #181842;
   width: 100%;
   margin: auto;
@@ -178,31 +166,62 @@ i.fa.fa-twitter-square {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-top: -50px;
+  margin-top: 15px;
   margin-left: -100px;
   border-radius: 20px;
   z-index: -1;
   
 }
 
-.btn {
-  border-radius: 10px;
+/*PORTFOLIO PAGE*/
+
+.portfolio_bio {
+  color: #181842;
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+#swollToll_tn {
+  border: 1px solid #ddd; /* Gray border */
+  border-radius: 4px;  /* Rounded border */
+  padding: 5px; /* Some padding */
+  width: 250px; /* Set a small width */
+}
+
+#swollToll_tn:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+#swollTollGit {
+  color: #ffc125;
+  text-shadow: -1px 0 #181842, 0 1px #181842, 1px 0 #181842, 0 -1px #181842;
+}
+
+#swollTollGit:hover {
+  color: #181842;
+  text-shadow: -1px 0 #ffc125, 0 1px #ffc125, 1px 0 #ffc125, 0 -1px #ffc125;
 }
 
 /*BLOG PAGE*/
 
 .blogposts a {
-  color: #181842;
+  color: #ffc125;
+  text-shadow: -1px 0 #181842, 0 1px #181842, 1px 0 #181842, 0 -1px #181842;
   margin-left: 10px;
 }
 
 .blogposts a:hover {
-  color: #A593E0;
+  color: #181842;
+  text-shadow: -1px 0 #ffc125, 0 1px #ffc125, 1px 0 #ffc125, 0 -1px #ffc125;
 }
 
 /*INTERESTS PAGE*/
 
 .carousel-inner {
-  height: 500px;
-  width: 500px;
+  height: 400px;
+  width: 400px;
+}
+
+.interests_bio {
+  padding-left: 10px;
 }

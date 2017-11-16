@@ -3,9 +3,10 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="styles.css">
-<link href="https://fonts.googleapis.com/css?family=Armata|Righteous|Saira+Semi+Condensed" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Exo+2:400,700" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="wrapper">
 
   <div class="header">  
     <header>                
@@ -18,41 +19,43 @@
 </head>
 <body>
 
-<nav>
-  <ul>
-    <li><a href="interests.html">Interests</a></li>
-    <li><a href="blog.html">Blog</a></li>
-    <li><a href="about.html">About</a></li>
-    <li class="active"><a href="portfolio.html">Portfolio</a></li>
-    <li><a href="index.html">Home</a></li>
-  </ul>
-</nav>
-
-
-<div class="portfolio_bio">
-	<h3 id="portfolio_headline">Projects I've created</h3>
-	<br />
-		<img id="swollToll_tn" src="images/swollToll.png" alt="swollToll">
-		<br />
-		<div class="text">In order to give myself a tool to keep track of my workouts, I developed the SwollToll. You can use it to pick a specific muscle group workout and make entries of your reps and the weight lifted. I'm working to add responsive charts that will visually display month-to-month or year-to-date progression. The SwollToll was built using PHP/Laravel/JavaScript.</div>
-		<br />
-		<p>Here is the GitHub <a id="swollTollGit" href="https://github.com/seancmont/swoll_toll">Repository</a></p>
-		<br />
-		<img id="typeTest_tn" src="images/typeTest_tn.jpg" alt="typeTest">
-		<br />
-		<div class="text">As the title indicates, this program can be used to test typing speed and skill. Once the user begins typing in the text box, they must replicate the given sentence exactly. When the text matches the sentence, the timer stops. Warning, this game is very addicting. The Typing Speed Test was built using HTML/CSS/JavaScript</div>
-		<br />
-		<p>Here is the Github <a id="typeTestGit" href="https://github.com/seancmont/typeTest">Repository</a></p>
+	<nav>
+	  <ul>
+	    <li><a href="interests.html">Interests</a></li>
+	    <li><a href="blog.html">Blog</a></li>
+	    <li><a href="about.html">About</a></li>
+	    <li class="active"><a href="portfolio.html">Portfolio</a></li>
+	    <li><a href="index.html">Home</a></li>
+	  </ul>
+	</nav>
 </div>
 
+<div class="bottom-wrapper">
+	<div class="portfolio_bio">
+		<h3 id="portfolio_headline">Projects I've created</h3>
+		<br />
+			<img id="swollToll_tn" src="images/swollToll.png" alt="swollToll">
+			<br />
+			<div class="text">In order to give myself a tool to keep track of my workouts, I developed the SwollToll. You can use it to pick a specific muscle group workout and make entries of your reps and the weight lifted. I'm working to add responsive charts that will visually display month-to-month or year-to-date progression. The SwollToll was built using PHP/Laravel/JavaScript.</div>
+			<br />
+			<p>Here is the GitHub <a id="swollTollGit" href="https://github.com/seancmont/swoll_toll">Repository</a></p>
+			<br />
+			<img id="typeTest_tn" src="images/typeTest_tn.jpg" alt="typeTest">
+			<br />
+			<div class="text">As the title indicates, this program can be used to test typing speed and skill. Once the user begins typing in the text box, they must replicate the given sentence exactly. When the text matches the sentence, the timer stops. Warning, this game is very addicting. The Typing Speed Test was built using HTML/CSS/JavaScript</div>
+			<br />
+			<p>Here is the Github <a id="typeTestGit" href="https://github.com/seancmont/typeTest">Repository</a></p>
+	</div>
+</div>
 	<br />
 	<br />
 
-	<footer class="footer">
+	<footer class="footer_scroll">
 	    <div id="footer_info">
 	        <p>&copy; 2017 All Rights Reserved | MTY41 <a href="https://github.com/seancmont"><i class="fa fa-github" aria-hidden="true"></i></a><a href="https://twitter.com/montymonty41"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></p> 
 	    </div>  
   	</footer>
-
+</div> <!-- closing tag for id container -->
 
 </body>
+</html>

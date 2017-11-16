@@ -3,7 +3,7 @@ body {
   background-size: cover;
   width: 100%;
   height: 100%;
-  font-family: 'Armata', sans-serif;
+  font-family: 'Exo 2', sans-serif;
   color: #181842;
 }
 
@@ -13,7 +13,8 @@ body {
 }
 
 header {
-  font-family: 'Armata', sans-serif;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 700;
   position: fixed;
   width: 100%;
   height: 150px;
@@ -29,15 +30,15 @@ header {
     font-size: 40px;
     padding-top: 40px;
     padding-left: 10px;
-    color: #ffc125;
+    color: #BDC8CA;
     text-shadow: -1px 0 #181842, 0 1px #181842, 1px 0 #181842, 0 -1px #181842;
   }
 
 #title2 {
     letter-spacing: 2px;
     font-size: 24px;
-    padding-left: 10px;
-    color: #ffc125;
+    padding-left: 112px;
+    color: #BDC8CA;
     text-shadow: -1px 0 #181842, 0 1px #181842, 1px 0 #181842, 0 -1px #181842;
   }
 
@@ -59,8 +60,9 @@ ul {
  
 li {
   height: 25px;
-  float: left;
+  float: right;
   margin-right: 0px;
+  margin-top: 150px;
   border-right: 1px solid #aaa;
   padding: 0 20px;
 }
@@ -71,8 +73,10 @@ li:last-child {
  
 li a {
   text-decoration: none;
-  color: #ccc;
-  font: 25px/1 Helvetica, Verdana, sans-serif;
+  color: #BDC8CA;
+  text-shadow: -1px 0 #181842, 0 1px #181842, 1px 0 #181842, 0 -1px #181842;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 20px;
   text-transform: uppercase;
  
   -webkit-transition: all 0.5s ease;
@@ -83,47 +87,23 @@ li a {
 }
  
 li a:hover {
-  color: #666;
+  color: #181842;
+  text-shadow: -1px 0 #BDC8CA, 0 1px #BDC8CA, 1px 0 #BDC8CA, 0 -1px #BDC8CA;
 }
  
 li.active a {
   font-weight: bold;
-  color: #333;
-}
-
-/*.navbar a {
-  padding-left: 10px;*/
- /* display: inline-block;
-  padding-right: 30px;
-  padding-top: 130px;
-  color: #ffc125;
-  text-shadow: -1px 0 #181842, 0 1px #181842, 1px 0 #181842, 0 -1px #181842;
-  font-size: 20px;
-  letter-spacing: 2px;*/
-/*}*/
-
-/*
-topNav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}*/
-
-.nav a:hover{
   color: #181842;
-  text-shadow: -1px 0 #ffc125, 0 1px #ffc125, 1px 0 #ffc125, 0 -1px #ffc125;
+  text-shadow: -1px 0 #BDC8CA, 0 1px #BDC8CA, 1px 0 #BDC8CA, 0 -1px #BDC8CA;
 }
 
-  h1, nav {
+/*  h1, nav {
     display: inline-block;
+    float: right;
     position: relative;
-    line-height: 150px;
+    line-height: 30px;
     -webkit-transition: all 0.3s;
-  }
+  }*/
 
 header.minimized {
   height: 60px;
@@ -192,13 +172,15 @@ i.fa.fa-twitter-square {
 
 /*PORTFOLIO PAGE*/
 
-#portfolio_headline {
+#portfolio_headline, #blog_headline {
   margin-left: 10px;
 }
 
 .portfolio_bio {
   color: #181842;
   margin-left: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   font-size: 16px;
 }
 
@@ -214,26 +196,27 @@ i.fa.fa-twitter-square {
 }
 
 #swollTollGit, #typeTestGit {
-  color: #ffc125;
+  color: #BDC8CA;
   text-shadow: -1px 0 #181842, 0 1px #181842, 1px 0 #181842, 0 -1px #181842;
 }
 
 #swollTollGit:hover, #typeTestGit:hover {
   color: #181842;
-  text-shadow: -1px 0 #ffc125, 0 1px #ffc125, 1px 0 #ffc125, 0 -1px #ffc125;
+  text-shadow: -1px 0 #BDC8CA, 0 1px #BDC8CA, 1px 0 #BDC8CA, 0 -1px #BDC8CA;
 }
 
 /*BLOG PAGE*/
 
 .blogposts a {
-  color: #ffc125;
+  color: #BDC8CA;
   text-shadow: -1px 0 #181842, 0 1px #181842, 1px 0 #181842, 0 -1px #181842;
   margin-left: 10px;
+  margin-top: 200px;
 }
 
 .blogposts a:hover {
   color: #181842;
-  text-shadow: -1px 0 #ffc125, 0 1px #ffc125, 1px 0 #ffc125, 0 -1px #ffc125;
+  text-shadow: -1px 0 #BDC8CA, 0 1px #BDC8CA, 1px 0 #BDC8CA, 0 -1px #BDC8CA;
 }
 
 /*INTERESTS PAGE*/
@@ -245,4 +228,6 @@ i.fa.fa-twitter-square {
 
 .interests_bio {
   padding-left: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }

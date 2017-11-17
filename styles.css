@@ -53,7 +53,7 @@ li {
   height: 25px;
   float: right;
   margin-right: 0px;
-  margin-top: 150px;
+  margin-top: 115px;
   border-right: 1px solid #aaa;
   padding: 0 20px;
 }
@@ -86,14 +86,6 @@ li.active a {
   color: #181842;
   text-shadow: -1px 0 #BDC8CA, 0 1px #BDC8CA, 1px 0 #BDC8CA, 0 -1px #BDC8CA;
 }
-
-/*  h1, nav {
-    display: inline-block;
-    float: right;
-    position: relative;
-    line-height: 30px;
-    -webkit-transition: all 0.3s;
-  }*/
 
 header.minimized {
   height: 60px;
@@ -205,7 +197,7 @@ i.fa.fa-twitter-square {
 .portfolio_bio {
   color: #181842;
   margin-left: 10px;
-  margin-top: 200px;
+  margin-top: 170px;
   margin-bottom: 20px;
   font-size: 16px;
 }
@@ -254,6 +246,5 @@ i.fa.fa-twitter-square {
 
 .interests_bio {
   padding-left: 10px;
-  padding-top: 20px;
   padding-bottom: 20px;
 }

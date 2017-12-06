@@ -55,6 +55,7 @@ a:hover,a:focus {
   /*margin: auto;*/
   margin-top: 20px;
   margin-bottom: 20px;
+  padding: 0;
   vertical-align: middle;
   border: 2px solid whitesmoke;
 }

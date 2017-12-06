@@ -44,6 +44,17 @@ a:hover,a:focus {
   border: 2px solid whitesmoke;
 }
 
+#seanPic2, #seanPic3 {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  margin-bottom: 15px;
+  vertical-align: middle;
+  border: 2px solid whitesmoke;
+}
+
 #banner .container, main header, #portfolio .grid, #contact>div, footer #footer-above {
   display:-webkit-box;
   display:-ms-flexbox;

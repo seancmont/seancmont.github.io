@@ -59,28 +59,30 @@
   <section id="contact">
     <h2>Contact Me</h2>
     <hr class="star-dark"/>
-    <div id="wrapper">
-      <div id="contactMe">
-        <form id="contactForm" novalidate="">
-          <div class="form-item">
-            <label for=""name"">Name</label>
-            <input id="name" type="text" placeholder="Name" required=""/>
-          </div>
-          <div class="form-item">
-            <label for=""email"">Email Address</label>
-            <input id="email" type="email" placeholder="Email Address" required=""/>
-          </div>
-          <div class="form-item">
-            <label for=""phone"">Phone Number</label>
-            <input id="phone" type="tel" placeholder="Phone Number" required=""/>
-          </div>
-          <div class="form-item">
-            <label for=""message"">Message</label>
-            <textarea id="message" rows="5" placeholder="Message" required=""></textarea>
-          </div><br/>
-          <button id="sendButton" type="submit">Send</button>
-        </form>
-        <div id="inTouch">
+    <div class="container">
+      <div class="row" id="contactMe">
+        <div id="contactForm" class="col-xs-6">
+          <form novalidate="">
+            <div class="form-item">
+              <label for=""name"">Name</label>
+              <input id="name" type="text" placeholder="Name" required=""/>
+            </div>
+            <div class="form-item">
+              <label for=""email"">Email Address</label>
+              <input id="email" type="email" placeholder="Email Address" required=""/>
+            </div>
+            <div class="form-item">
+              <label for=""phone"">Phone Number</label>
+              <input id="phone" type="tel" placeholder="Phone Number" required=""/>
+            </div>
+            <div class="form-item">
+              <label for=""message"">Message</label>
+              <textarea id="message" rows="5" placeholder="Message" required=""></textarea>
+            </div><br/>
+            <button id="sendButton" type="submit">Send</button>
+          </form>
+        </div>
+        <div id="contactMessage" class="col-xs-6">
           <p>Want to get in touch with me? Resume requests, inquiries on my experience, recommendations, fantasy football questions...please feel free to reach out.</p>
         </div>
       </div>

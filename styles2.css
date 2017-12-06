@@ -44,11 +44,7 @@ a:hover,a:focus {
   border: 2px solid whitesmoke;
 }
 
-#banner .container, 
-main header, 
-#portfolio .grid, 
-#contact>div,
-footer #footer-above {
+#banner .container, main header, #portfolio .grid, #contact>div, footer #footer-above {
   display:-webkit-box;
   display:-ms-flexbox;
   display:flex;
@@ -66,7 +62,7 @@ footer #footer-above {
   background-color:#47839A !important;
   height:80px;
   box-shadow:0px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  border-color:#592059;
+  border-color:#888;
 }
 
 #banner .container {
@@ -236,7 +232,7 @@ main section#contact>div>div p {
 
 @media(min-width:1023px) {
   main section#contact>div>div {
-    max-width:38%;
+    max-width:100%;
 }  
   main section#contact>div>div p{margin-top:35px;
   }
@@ -279,7 +275,7 @@ form{
 
 @media(min-width:1023px) {
   form{
-    width:100%;
+    width: 40%;
     margin-left:20px;
   }
 }

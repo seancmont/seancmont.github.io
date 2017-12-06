@@ -91,7 +91,7 @@ nav{
   nav{padding:5px;text-align:center;margin:0 auto;width:120%;
 }
   nav .active a {
-  color:#722872;
+  color: whitesmoke;
   background:#bbb;
   box-shadow:0px 2px 2px 1px rgba(0, 0, 0, 0.1);
   }
@@ -108,7 +108,7 @@ nav{
 }
 
 .nav li a {
-  color: #B3B6B8 !important; 
+  color: whitesmoke !important; 
   padding:10px 20px;
 }
 
@@ -121,20 +121,6 @@ nav{
   margin-right:0;
 }  
 
-#sendButton {
-  height: 40px;
-  width: 65px;
-  font-size: 20px;
-  font-family: 'Play', sans-serif;
-  color: #888;
-  border-color: #888;
-  border-style: solid;
-  border-width: 2px;
-  border-radius: 5px;
-  text-align: center;
-  transition: 2s;
-}
-
 #navButton {
   font-family: 'Play', sans-serif;
   color: whitesmoke;
@@ -145,12 +131,6 @@ nav{
   margin-top: 25px;
   text-align: center;
   transition: 1s;
-}
-
-#sendButton:hover {
-  color: whitesmoke;
-  background-color: #888;
-  border-color: #47839A;
 }
 
 #navButton:hover {
@@ -329,6 +309,37 @@ form .row:first-child .form-item {
 
 .form-item-focused label {
   color:#47839A;
+}
+
+#contactForm {
+  margin-left: 0 !important;
+  margin-right: 0;
+  width: 80%;
+}
+
+#contactMessage {
+  margin-left: 20px;
+  width: 40%;
+}
+
+#sendButton {
+  height: 40px;
+  width: 65px;
+  font-size: 20px;
+  font-family: 'Play', sans-serif;
+  color: #888;
+  border-color: #888;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  text-align: center;
+  transition: 2s;
+}
+
+#sendButton:hover {
+  color: whitesmoke;
+  background-color: #888;
+  border-color: #47839A;
 }
 
 footer{

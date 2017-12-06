@@ -1,85 +1,67 @@
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-// function navFunction() {
-//     var x = document.getElementById("myTopnav");
-//     if (x.className === "topNav") {
-//         x.className += " responsive";
-//     } else {
-//         x.className = "topNav";
-//     }
-// }
+$(window).on('resize', function() {
+  'use strict';
+  var element	= document.querySelector('#banner'),
+      elHeight = 0,
+      elTop = 0,
+      dHeight	= 0,
+      wHeight	= 0,
+      wScrollCurrent = 0,
+      wScrollBefore	= 0,
+      wScrollDiff	= 0; 
+      window.addEventListener('scroll', function () {
+        // Hide the displayed menu. If you want to scroll, you're obviously not interested in the options.
+        $('.navbar-collapse').collapse('hide');
+        $('.navbar-toggle').addClass('collapsed').blur();
+        if($(window).width() <= 768) {
+          elHeight = element.offsetHeight;
+          dHeight = document.body.offsetHeight;
+          wHeight = window.innerHeight;
+          wScrollCurrent = window.pageYOffset;
+          wScrollDiff = wScrollBefore - wScrollCurrent;
+          elTop = parseInt(window.getComputedStyle(element).getPropertyValue('top')) + wScrollDiff;
 
+          // scrolled to the very top; element sticks to the top
+          if(wScrollCurrent <= 0) {
+              element.style.top = '0px';
+          } // scrolled up; element slides in
+            else if(wScrollDiff > 0) {
+              element.style.top = (elTop > 0? 0 : elTop) + 'px'; 
+          } // scrolled down
+            else if(wScrollDiff < 0) {
+              // scrolled to the very bottom; element slides in
+              if(wScrollCurrent + wHeight >= dHeight - elHeight) {  
+                element.style.top = ( ( elTop = wScrollCurrent + wHeight - dHeight ) < 0 ? elTop : 0 ) + 'px';
+              } // scrolled down; element slides out
+                else { element.style.top = ( Math.abs( elTop ) > elHeight ? -elHeight : elTop ) + 'px'; }
+            }
+          wScrollBefore = wScrollCurrent;
+        } //
+          else element.style.top = '0px';
+      });
+}).resize();
 
-/* 
-  Description: Animates the header upon scroll
-  
-*/
+// Floating label headings for the contact form
+$(function() {$("body")
+ .on("input propertychange", ".form-item",function(e) {
+  $(this).toggleClass("form-item-filled",!! $(e.target).val());})
+ .on("focus", ".form-item",function() {
+  $(this).addClass("form-item-focused");})
+ .on("blur", ".form-item",function() {
+  $(this).removeClass("form-item-focused");});
+});
 
-// $(function(){
-//   var header = $("header"),
-//       yOffset = 0,
-//       triggerPoint = 150;
-//   $(window).scroll(function(){
-//     yOffset = $(window).scrollTop();
-    
-//     if(yOffset >= triggerPoint){
-//       header.addClass("minimized");
-//     }else{
-//       header.removeClass("minimized");
-//     }
-    
-//   });
-// });
+// Highlight the top nav as scrolling occurs
+$('body').scrollspy({target: '.navbar-fixed-top'})
 
-// Sticky navbar
+// Closes the Responsive Menu on Menu Item Click
+$('.navbar-collapse ul li a').click(function() {
+  $(".navbar-collapse").collapse('hide');});
 
-// var headerHeight = 200;
+// jQuery for page scrolling feature - requires jQuery Easing plugin
+$(function() {$('body').on('click', 'a.scrollable', function(event) {
+  var $anchor = $(this);
+  $('html, body').stop().animate({scrollTop: $($anchor.attr('href')).offset().top},1500,'easeInOutExpo');
+  event.preventDefault();
+  });
+});
 
-// $(window).bind('scroll', function () {
-// if ($(window).scrollTop() > headerHeight) {
-//     $('#myNav').removeClass('navbar-top');
-//     $('#myNav').addClass('navbar-fixed-top');
-// } else {
-//     $('#myNav').removeClass('navbar-fixed-top');
-//     $('#myNav').addClass('navbar-top');
-// }
-// }); 
-
-// var slideIndex = 1;
-// showSlides(slideIndex);
-
-// function plusSlides(n) {
-//   showSlides(slideIndex += n);
-// }
-
-// function currentSlide(n) {
-//   showSlides(slideIndex = n);
-// }
-
-// function showSlides(n) {
-//   var i;
-//   var slides = document.getElementsByClassName("mySlides");
-//   var dots = document.getElementsByClassName("dot");
-//   if (n > slides.length) {slideIndex = 1}    
-//   if (n < 1) {slideIndex = slides.length}
-//   for (i = 0; i < slides.length; i++) {
-//       slides[i].style.display = "none";  
-//   }
-//   for (i = 0; i < dots.length; i++) {
-//       dots[i].className = dots[i].className.replace(" active", "");
-//   }
-//   slides[slideIndex-1].style.display = "block";  
-//   dots[slideIndex-1].className += " active";
-// }
-// $(document).ready(function() {
-// 		var s = $("#sticker");
-// 		var pos = s.position();					   
-// 		$(window).scroll(function() {
-// 			var windowpos = $(window).scrollTop();
-			
-// 			if (windowpos >= pos.top) {
-// 				s.addClass("stick");
-// 			} else {
-// 				s.removeClass("stick");	
-// 			}
-// 		});
-// 	});

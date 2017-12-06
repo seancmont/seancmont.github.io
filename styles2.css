@@ -40,17 +40,20 @@ a:hover,a:focus {
   display: block;
   margin: auto;
   margin-bottom: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
   vertical-align: middle;
   border: 2px solid whitesmoke;
 }
 
 #seanPic2, #seanPic3 {
-  height: 150px;
-  width: 150px;
+  height: 175px;
+  width: 175px;
   border-radius: 50%;
   display: block;
-  margin: auto;
-  margin-bottom: 15px;
+  /*margin: auto;*/
+  margin-top: 20px;
+  margin-bottom: 20px;
   vertical-align: middle;
   border: 2px solid whitesmoke;
 }

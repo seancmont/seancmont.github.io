@@ -220,6 +220,24 @@ main section#contact>div>div p {
   }
 }
 
+#portfolioImages {
+  list-style: none;
+}
+
+#portfolioImg {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width:70%;
+  margin: auto;
+  height:auto;
+  display:block;
+  padding:1px;
+  border:1px solid #888;
+  background-color: white;
+  border-radius: 4px;
+}
+
 #portfolio .grid {
   padding:0;
   max-width:90%;
@@ -238,7 +256,7 @@ main section#contact>div>div p {
   }
 }
 
-#portfolio img {
+/*#portfolio img {
   max-width:70%;
   margin: auto;
   height:auto;
@@ -247,7 +265,7 @@ main section#contact>div>div p {
   border:1px solid #888;
   background-color: white;
   border-radius: 4px;
-}
+}*/
 
 form{
   width: 100%;

@@ -312,9 +312,9 @@ form .row:first-child .form-item {
 }
 
 #contactForm {
-  margin-left: 0 !important;
+  margin-left: 0;
   margin-right: 0;
-  width: 80%;
+  width: 100% !important;
 }
 
 #contactMessage {

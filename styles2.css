@@ -39,9 +39,9 @@ a:hover,a:focus {
   border-radius: 50%;
   display: block;
   margin: auto;
-  margin-bottom: 15px;
+  /*margin-bottom: 15px;
   margin-left: 50px;
-  margin-right: 50px;
+  margin-right: 50px;*/
   padding: 0;
   vertical-align: middle;
   border: 2px solid whitesmoke;
